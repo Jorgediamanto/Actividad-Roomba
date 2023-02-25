@@ -3,16 +3,16 @@ from tkinter import messagebox
 
 def callback():
     global numbers
-    numbers = []
-    for entry in entries:
-        try:
-            numbers.append(float(entry.get()))
-        except ValueError:
-            messagebox.showerror("Error", "Debe introducir un número válido.")
-            return
-
+    numbers = [
+        [float(entries[0].get()), float(entries[1].get())],
+        [float(entries[2].get()), float(entries[3].get())],
+        [float(entries[4].get()), float(entries[5].get())],
+        [float(entries[6].get()), float(entries[7].get())]
+    ]
     print("Los números introducidos son:", numbers)
+    print("Area 1 :"+str(numbers[0][0]*numbers[0][1])+"Area 2 :"+str(numbers[1][0]*numbers[1][1])+"Area 3 :"+str(numbers[2][0]*numbers[2][1])+"Area 4 :"+str(numbers[3][0]*numbers[3][1]))
     window2.destroy()
+
 
 def open_window():
     global entries
