@@ -12,7 +12,7 @@ def callback():
     print("Los números introducidos son:", numbers)
     print("Area 1 :"+str(numbers[0][0]*numbers[0][1])+"Area 2 :"+str(numbers[1][0]*numbers[1][1])+"Area 3 :"+str(numbers[2][0]*numbers[2][1])+"Area 4 :"+str(numbers[3][0]*numbers[3][1]))
     superficie_tot =(numbers[0][0]*numbers[0][1])+(numbers[1][0]*numbers[1][1])+(numbers[2][0]*numbers[2][1])+(numbers[3][0]*numbers[3][1])
-    print(superficie_tot)
+    print(superficie_tot)   
     window2.destroy()
 
 
